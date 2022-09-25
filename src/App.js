@@ -1,8 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import 'tachyons'
+import React, { Component } from 'react';
+import Hello from './Hello'
 
-function App() {
-  return (
+
+class App extends Component {
+  render() {
+    return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -18,8 +23,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <h2 className="f1">{JSON.stringify(this.props.objekat)}</h2>
+      <Hello />  
     </div>
+    
   );
+  }
 }
 
 export default App;

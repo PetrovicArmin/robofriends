@@ -5,9 +5,26 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const getObject = () => {
+  return {
+          ime: "Armin",
+          prezime: "Petrovic",
+          ovako: "ma ja",
+          detaljno: {
+            adresa: "Svetozara markovića trideset devet",
+            telefon: "062 066 506"
+          }
+        };
+}
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App 
+        message={"Ovo je neka bezveze promjena!"}
+        bezveze={"Ovo je drugi tekst!"}
+        objekat={getObject()}
+    />
   </React.StrictMode>
 );
 
