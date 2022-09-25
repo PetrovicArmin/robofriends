@@ -1,31 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import 'tachyons';
+import App from './Containers/App';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const getObject = () => {
-  return {
-          ime: "Armin",
-          prezime: "Petrovic",
-          ovako: "ma ja",
-          detaljno: {
-            adresa: "Svetozara markovića trideset devet",
-            telefon: "062 066 506"
-          }
-        };
-}
-
 root.render(
-  <React.StrictMode>
-    <App 
-        message={"Ovo je neka bezveze promjena!"}
-        bezveze={"Ovo je drugi tekst!"}
-        objekat={getObject()}
-    />
-  </React.StrictMode>
+	<React.StrictMode>
+      	<App/>
+  	</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
