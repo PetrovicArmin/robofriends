@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { ReactComponentElement } from "react";
 
 class Scroll extends Component {
     render() {
