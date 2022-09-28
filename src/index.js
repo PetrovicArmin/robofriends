@@ -8,7 +8,7 @@ import './index.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-armin
+let armin = 35;
 root.render(
 	<React.StrictMode>
       	<App/>
